@@ -15,8 +15,8 @@ class ProjectTest extends \PHPUnit\Framework\TestCase
 
     public function testProjectCreation()
     {
-        $project = Project::createProject('MyTitle','http://kosarev.by');
-        $bad_project = Project::createProject('MyTitle','http://by');
+        $project = Project::createProject('MyTitle', 'http://kosarev.by');
+        $bad_project = Project::createProject('MyTitle', 'http://by');
 
         $this->assertInstanceOf(Project::class, $project);
         $this->assertNull($bad_project);

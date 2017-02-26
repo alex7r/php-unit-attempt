@@ -8,5 +8,5 @@
  * Date: 26.02.2017 15:01
  */
 include_once 'project.php';
-$project = System\Project::createProject('My project','http://kosarev.by',1);
+$project = System\Project::createProject('My project', 'http://kosarev.by', 1);
 var_dump($project);
